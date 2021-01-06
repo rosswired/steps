@@ -4,7 +4,7 @@ const prev = document.getElementById("prev")
 
 // we want all 5 .circles so we use querySelectorAll which returns all elements with that class in a Node List - which is basically an Array
 const circles = document.querySelectorAll(".circle")
-console.log(circles)
+
 
 // a counter for the active class
 let currentActive = 1;
@@ -12,7 +12,6 @@ let currentActive = 1;
 // listens for click event on next button 
 next.addEventListener('click', () => {
     // increments currentactive when heard
-    console.log(currentActive)
     currentActive++
     // if currentActive is greater than circles.length which is 4 then we are at the end so 
     // stop incrementing by setting currentActive to 4 
@@ -26,7 +25,6 @@ next.addEventListener('click', () => {
 
 prev.addEventListener('click', () => {
     // if prev is clicked decrement currentActive
-    console.log(currentActive)
     currentActive--
     // if current active is less than 1 then we are at the begining so set currentActive to 1
     if (currentActive < 1) {
